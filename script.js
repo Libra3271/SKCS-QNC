@@ -7,7 +7,7 @@ const KO = {
   "nav.process": "진행절차",
   "nav.contact": "문의",
   "nav.apply": "신청하기",
-  "hero.sub": "SKCS의 사이드 프로젝트 지원 프로그램 <strong>Quack N Click (QNC)</strong> 참가자를 모집합니다!<br class=\"hide-sm\" /> 모든 IGC 학생에게 열려있는 해커톤 형식의 프로젝트 지원 프로그램입니다.",
+  "hero.sub": "SKCS의 사이드 프로젝트 지원 프로그램 <strong>Quack N Click (QNC)</strong> 참가자를 모집합니다!<br class=\"hide-sm\" /> 모든 IGC 학생에게 열려있는 한 학기 프로젝트 지원 프로그램입니다.",
   "hero.apply": "지금 신청하기 →",
   "hero.process": "진행절차 보기",
   "hero.deadline": "신청 마감 <strong>10/12</strong>",
