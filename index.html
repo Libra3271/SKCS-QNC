@@ -7,22 +7,21 @@
   <meta name="description" content="Quack N Click (QNC), the SKCS side project support program. Build a team, develop your idea, and ship a working project." />
   <meta property="og:title" content="SKCS Quack N Click (QNC): Now Recruiting" />
   <meta property="og:description" content="Have an idea? Quack. Click. Create. ₩1,000,000+ in prizes · Apply by Oct 12" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232860F3'/><text x='50' y='72' font-family='Arial,sans-serif' font-size='64' font-weight='700' text-anchor='middle' fill='%23FCFCFC'>Q</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230B2457'/><text x='50' y='70' font-family='Consolas,monospace' font-size='60' font-weight='700' text-anchor='middle' fill='%23FCFCFC'>Q</text><rect x='62' y='74' width='14' height='8' fill='%232860F3'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Work+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Quack N Click home">Quack N Click</a>
+      <a href="#top" class="brand" aria-label="Quack N Click home">QNC<span class="cursor">_</span></a>
       <nav class="nav-links" aria-label="Main menu">
         <a href="#about">About</a>
         <a href="#prize">Prize</a>
         <a href="#process" data-i18n="nav.process">Process</a>
         <a href="#templates">Templates</a>
-        <a href="#support">Support</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
@@ -38,14 +37,14 @@
   <main id="top">
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow">SKCS Side Project Program</p>
+      <div class="container">
+        <p class="label"><span class="dot-mark"></span> SKCS Side Project Program</p>
         <h1 class="hero-title">
           Have an idea?<br />
-          <span class="hl">Quack.</span> <span class="hl">Click.</span> <span class="hl">Create.</span>
+          Quack<span class="accent">.</span> Click<span class="accent">.</span> Create<span class="accent">.</span>
         </h1>
         <p class="hero-sub" data-i18n="hero.sub">
-          SKCS is recruiting participants for <strong>Quack N Click (QNC)</strong>, our side project support program!<br class="hide-sm" />
+          SKCS is recruiting participants for <strong>Quack N Click (QNC)</strong>, our side project support program.<br class="hide-sm" />
           QNC is a one-semester project support program open to all IGC students.
         </p>
 
@@ -54,60 +53,68 @@
           <a class="btn btn-ghost btn-lg" href="#process" data-i18n="hero.process">See how it works</a>
         </div>
 
-        <div class="countdown" aria-live="polite">
-          <span class="countdown-label" data-i18n="hero.deadline">Applications close <strong>Oct 12</strong></span>
-          <span class="countdown-value" id="countdown">D-?</span>
-        </div>
-        <p class="hero-note" data-i18n="hero.note">* Your project start date is based on when you submit the form, so <strong>the earlier you apply, the better.</strong></p>
+        <dl class="hero-meta">
+          <div>
+            <dt data-i18n="hero.deadline">Deadline</dt>
+            <dd><span data-i18n="contact.date">Oct 12</span> <span class="dday" id="countdown">D-?</span></dd>
+          </div>
+          <div>
+            <dt data-i18n="hero.prize">Prize pool</dt>
+            <dd>₩1,000,000+</dd>
+          </div>
+          <div>
+            <dt data-i18n="hero.open">Open to</dt>
+            <dd data-i18n="hero.openval">All IGC students</dd>
+          </div>
+        </dl>
+        <p class="hero-note" data-i18n="hero.note">Your project start date is the day you submit the form, so <strong>the earlier you apply, the better.</strong></p>
       </div>
     </section>
 
     <!-- About -->
     <section id="about" class="section">
       <div class="container">
-        <p class="section-eyebrow">About QNC</p>
-        <h2 class="section-title" data-i18n="about.title">Only had an idea so far?<br />This time, let's actually build it.</h2>
+        <p class="section-label">// 01 About</p>
+        <h2 class="section-title" data-i18n="about.title">Had an idea? This time, build it.</h2>
         <div class="grid-3">
           <article class="card">
-            <div class="card-icon">👥</div>
+            <p class="tag">Team</p>
             <h3 data-i18n="about.c1.t">Build your own team</h3>
             <p data-i18n="about.c1.p">Find teammates and form your own team for the rest of the semester.</p>
           </article>
           <article class="card">
-            <div class="card-icon">💡</div>
+            <p class="tag">Idea</p>
             <h3 data-i18n="about.c2.t">Develop your idea</h3>
             <p data-i18n="about.c2.p">Refine your idea with your team and put together a realistic development plan.</p>
           </article>
           <article class="card">
-            <div class="card-icon">🚀</div>
+            <p class="tag">Ship</p>
             <h3 data-i18n="about.c3.t">Ship something that works</h3>
             <p data-i18n="about.c3.p">The goal is to build and finish a working project by the end of the semester.</p>
           </article>
         </div>
-        <div class="callout">
-          <p data-i18n="about.callout"><strong>Not much development experience? That's okay.</strong><br />
-          If you've been thinking, “This semester, I want to properly build a project of my own,” join QNC.</p>
-        </div>
+        <p class="note" data-i18n="about.callout"><strong>Not much development experience? That's okay.</strong> If you've been thinking, “This semester, I want to properly build a project of my own,” join QNC.</p>
       </div>
     </section>
 
     <!-- Prize -->
     <section id="prize" class="section section-alt">
       <div class="container prize">
-        <div class="prize-main">
-          <p class="section-eyebrow">Prize</p>
-          <h2 class="section-title" data-i18n="prize.title">🏆 <span class="prize-amount">₩1,000,000+</span> in Prizes</h2>
+        <div>
+          <p class="section-label">// 02 Prize</p>
+          <h2 class="section-title" data-i18n="prize.title">Prizes</h2>
+          <p class="prize-amount">₩1,000,000+</p>
           <p class="lead" data-i18n="prize.lead">Prizes worth a total of ₩1,000,000 will be awarded at the final QNC Award Ceremony.</p>
         </div>
-        <div class="prize-criteria">
+        <div class="criteria">
           <h3 data-i18n="prize.h">QNC doesn't judge the final product alone</h3>
-          <ul class="checklist">
+          <ol class="criteria-list">
             <li data-i18n="prize.k1">Project progress</li>
             <li data-i18n="prize.k2">Teamwork</li>
             <li data-i18n="prize.k3">Fulfilling your role</li>
             <li data-i18n="prize.k4">Consistent development</li>
             <li data-i18n="prize.k5">The finished product</li>
-          </ul>
+          </ol>
           <p class="muted" data-i18n="prize.note">Building a great product matters, but the heart of QNC is the process of a team working together to see a project through to the end.</p>
         </div>
       </div>
@@ -116,46 +123,46 @@
     <!-- Process -->
     <section id="process" class="section">
       <div class="container">
-        <p class="section-eyebrow">How it works</p>
-        <h2 class="section-title" data-i18n="process.title">💻 The QNC Process</h2>
-        <ol class="timeline">
-          <li class="step">
+        <p class="section-label">// 03 Process</p>
+        <h2 class="section-title" data-i18n="process.title">How QNC Works</h2>
+        <ol class="steps">
+          <li>
             <span class="step-num">01</span>
             <div>
               <h3 data-i18n="s1.t">Apply</h3>
               <p data-i18n="s1.p">Sign up for the QNC program.</p>
             </div>
           </li>
-          <li class="step">
+          <li>
             <span class="step-num">02</span>
             <div>
               <h3>Team Matching</h3>
               <p data-i18n="s2.p">Find teammates and form a team for your project.</p>
             </div>
           </li>
-          <li class="step">
+          <li>
             <span class="step-num">03</span>
             <div>
               <h3>Idea Development</h3>
               <p data-i18n="s3.p">Flesh out your project idea with your team and plan its development.</p>
-              <p class="step-note" data-i18n="s3.note">The executive team will check in on your progress regularly, and each team must complete the provided template. → <a href="#templates">Get the templates</a></p>
+              <p class="step-note" data-i18n="s3.note">The executive team will check in on your progress regularly, and each team must complete the provided template. <a href="#templates">Get the templates →</a></p>
             </div>
           </li>
-          <li class="step">
+          <li>
             <span class="step-num">04</span>
             <div>
               <h3>Mid-Break Advising Session</h3>
               <p data-i18n="s4.p">At the midpoint, get feedback and mentoring from professors and Project Managers.</p>
             </div>
           </li>
-          <li class="step">
+          <li>
             <span class="step-num">05</span>
             <div>
               <h3>Project Development</h3>
               <p data-i18n="s5.p">Build and finish your project based on that feedback.</p>
             </div>
           </li>
-          <li class="step step-final">
+          <li class="step-final">
             <span class="step-num">06</span>
             <div>
               <h3>Final Presentation &amp; QNC Award Ceremony</h3>
@@ -169,19 +176,14 @@
     <!-- Templates -->
     <section id="templates" class="section section-alt">
       <div class="container">
-        <p class="section-eyebrow">Templates</p>
-        <h2 class="section-title" data-i18n="templates.title">📂 QNC Templates</h2>
+        <p class="section-label">// 04 Templates</p>
+        <h2 class="section-title" data-i18n="templates.title">Templates</h2>
         <div class="resources">
-          <article class="resource">
-            <div class="resource-head">
-              <div class="resource-icon" aria-hidden="true">💡</div>
-              <div>
-                <h3>Idea Building Template</h3>
-                <p class="resource-meta" data-i18n="templates.meta">Word (.docx) · English</p>
-              </div>
-            </div>
+          <article class="card resource">
+            <p class="tag">.docx · <span data-i18n="templates.lang">English</span></p>
+            <h3>Idea Building Template</h3>
             <p data-i18n="t1.p">A document for developing and recording your team's idea. Use one shared copy per team throughout the semester, and if your direction changes, record what changed and why.</p>
-            <ul class="tags">
+            <ul class="contents">
               <li>Team Profile</li>
               <li>Idea Overview</li>
               <li>Problem Statement</li>
@@ -189,29 +191,24 @@
               <li>Funding / Support Request</li>
               <li>Brainstorming Notes</li>
             </ul>
-            <a class="btn" href="assets/templates/qnc-idea-building-template.docx" download="QNC Program_Idea Building Template.docx" data-i18n="templates.dl">⬇ Download</a>
+            <a class="btn" href="assets/templates/qnc-idea-building-template.docx" download="QNC Program_Idea Building Template.docx" data-i18n="templates.dl">Download</a>
           </article>
 
-          <article class="resource">
-            <div class="resource-head">
-              <div class="resource-icon" aria-hidden="true">🗓</div>
-              <div>
-                <h3>Weekly Check-in Sheet</h3>
-                <p class="resource-meta" data-i18n="templates.meta">Word (.docx) · English</p>
-              </div>
-            </div>
+          <article class="card resource">
+            <p class="tag">.docx · <span data-i18n="templates.lang">English</span></p>
+            <h3>Weekly Check-in Sheet</h3>
             <p data-i18n="t2.p">The progress report each team submits weekly to their PM / Advisor. Add each new week at the top, and keep earlier entries instead of deleting them.</p>
-            <ul class="tags">
+            <ul class="contents">
               <li>Team Profile</li>
               <li>Milestones &amp; Roadmap</li>
               <li>Open Action Items</li>
               <li>Weekly Check-in Log</li>
             </ul>
-            <a class="btn" href="assets/templates/qnc-weekly-check-in-sheet.docx" download="QNC_Weekly Check-in Sheet.docx" data-i18n="templates.dl">⬇ Download</a>
+            <a class="btn" href="assets/templates/qnc-weekly-check-in-sheet.docx" download="QNC_Weekly Check-in Sheet.docx" data-i18n="templates.dl">Download</a>
           </article>
         </div>
 
-        <div class="callout resource-tips">
+        <div class="guide">
           <h3 data-i18n="guide.h">How to fill them out</h3>
           <ul>
             <li data-i18n="guide.1">Use one shared document per team.</li>
@@ -227,14 +224,11 @@
 
     <!-- Support -->
     <section id="support" class="section">
-      <div class="container support">
-        <p class="section-eyebrow">With SKCS</p>
-        <h2 class="section-title" data-i18n="support.title">🛠 SKCS Has Your Back</h2>
-        <p class="lead" data-i18n="support.lead">
-          Throughout QNC, SKCS will keep track of each team's progress and provide the support every team needs to finish their project.
-        </p>
+      <div class="container">
+        <p class="section-label">// 05 Support</p>
+        <h2 class="section-title" data-i18n="support.title">Backed by SKCS</h2>
+        <p class="lead" data-i18n="support.lead">Throughout QNC, SKCS will keep track of each team's progress and provide the support every team needs to finish their project.</p>
         <p class="muted" data-i18n="support.muted">If you get stuck or need help, reach out to the SKCS Executive Team anytime.</p>
-        <p class="tagline">Connect. Collaborate. Create.</p>
       </div>
     </section>
 
@@ -244,11 +238,11 @@
         <h2 class="cta-title">Build Your Project.<br />Build Your Portfolio.</h2>
         <dl class="info-list">
           <div>
-            <dt data-i18n="contact.deadline">📌 Deadline</dt>
+            <dt data-i18n="contact.deadline">Deadline</dt>
             <dd data-i18n="contact.date">Oct 12</dd>
           </div>
           <div>
-            <dt data-i18n="contact.contact">📌 Contact</dt>
+            <dt data-i18n="contact.contact">Contact</dt>
             <dd>
               <a href="https://instagram.com/skcs.official" target="_blank" rel="noopener">@skcs.official</a>
               <span class="sep">/</span>
