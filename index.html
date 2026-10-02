@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quack N Click | SKCS</title>
-  <meta name="description" content="SKCS의 사이드 프로젝트 지원 프로그램 Quack N Click (QNC). 팀을 꾸리고, 아이디어를 발전시키고, 실제로 작동하는 프로젝트를 완성하세요." />
-  <meta property="og:title" content="SKCS Quack N Click (QNC) 참가자 모집" />
-  <meta property="og:description" content="Have an idea? Quack. Click. Create. 총 100만원+ 상당의 Prize · 신청 마감 10/12" />
+  <meta name="description" content="Quack N Click (QNC), the SKCS side project support program. Build a team, develop your idea, and ship a working project." />
+  <meta property="og:title" content="SKCS Quack N Click (QNC): Now Recruiting" />
+  <meta property="og:description" content="Have an idea? Quack. Click. Create. ₩1,000,000+ in prizes · Apply by Oct 12" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,19 +16,22 @@
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Quack N Click 홈">
+      <a href="#top" class="brand" aria-label="Quack N Click home">
         <span class="brand-mark" aria-hidden="true">🦆</span>
         <span class="brand-text">Quack N Click</span>
       </a>
-      <nav class="nav-links" aria-label="주요 메뉴">
+      <nav class="nav-links" aria-label="Main menu">
         <a href="#about">About</a>
         <a href="#prize">Prize</a>
-        <a href="#process">진행절차</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
         <a href="#templates">Templates</a>
         <a href="#support">Support</a>
-        <a href="#contact">문의</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a class="btn btn-sm" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener">신청하기</a>
+      <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" lang="ko" aria-label="한국어로 보기">한국어</button>
+        <a class="btn btn-sm" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener" data-i18n="nav.apply">Apply</a>
+      </div>
     </div>
   </header>
 
@@ -41,21 +44,21 @@
           Have an idea?<br />
           <span class="hl">Quack.</span> <span class="hl">Click.</span> <span class="hl">Create.</span>
         </h1>
-        <p class="hero-sub">
-          SKCS의 사이드 프로젝트 지원 프로그램 <strong>Quack N Click (QNC)</strong> 참가자를 모집합니다!<br class="hide-sm" />
-          모든 IGC 학생에게 열려있는 해커톤 형식의 프로젝트 지원 프로그램입니다.
+        <p class="hero-sub" data-i18n="hero.sub">
+          SKCS is recruiting participants for <strong>Quack N Click (QNC)</strong>, our side project support program!<br class="hide-sm" />
+          QNC is a hackathon-style project program open to all IGC students.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-lg" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener">지금 신청하기 →</a>
-          <a class="btn btn-ghost btn-lg" href="#process">진행절차 보기</a>
+          <a class="btn btn-lg" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener" data-i18n="hero.apply">Apply now →</a>
+          <a class="btn btn-ghost btn-lg" href="#process" data-i18n="hero.process">See how it works</a>
         </div>
 
         <div class="countdown" aria-live="polite">
-          <span class="countdown-label">신청 마감 <strong>10/12</strong></span>
+          <span class="countdown-label" data-i18n="hero.deadline">Applications close <strong>Oct 12</strong></span>
           <span class="countdown-value" id="countdown">D-?</span>
         </div>
-        <p class="hero-note">* 프로젝트 시작일은 폼 제출일 기준이므로 <strong>빨리 신청할수록 유리합니다.</strong></p>
+        <p class="hero-note" data-i18n="hero.note">* Your project start date is based on when you submit the form, so <strong>the earlier you apply, the better.</strong></p>
       </div>
       <div class="hero-duck" aria-hidden="true">🦆</div>
     </section>
@@ -64,27 +67,27 @@
     <section id="about" class="section">
       <div class="container">
         <p class="section-eyebrow">About QNC</p>
-        <h2 class="section-title">아이디어만 가지고 있었다면,<br />이번에는 직접 만들어봅시다.</h2>
+        <h2 class="section-title" data-i18n="about.title">Only had an idea so far?<br />This time, let's actually build it.</h2>
         <div class="grid-3">
           <article class="card">
             <div class="card-icon">👥</div>
-            <h3>직접 팀 구성</h3>
-            <p>남은 학기동안 함께할 팀원을 직접 찾고 팀을 꾸립니다.</p>
+            <h3 data-i18n="about.c1.t">Build your own team</h3>
+            <p data-i18n="about.c1.p">Find teammates and form your own team for the rest of the semester.</p>
           </article>
           <article class="card">
             <div class="card-icon">💡</div>
-            <h3>아이디어 발전</h3>
-            <p>팀원들과 아이디어를 구체화하고, 실현 가능한 개발 계획을 세웁니다.</p>
+            <h3 data-i18n="about.c2.t">Develop your idea</h3>
+            <p data-i18n="about.c2.p">Refine your idea with your team and put together a realistic development plan.</p>
           </article>
           <article class="card">
             <div class="card-icon">🚀</div>
-            <h3>실제로 작동하는 결과물</h3>
-            <p>학기 말까지 실제로 작동하는 프로젝트를 개발·완성하는 것이 목표입니다.</p>
+            <h3 data-i18n="about.c3.t">Ship something that works</h3>
+            <p data-i18n="about.c3.p">The goal is to build and finish a working project by the end of the semester.</p>
           </article>
         </div>
         <div class="callout">
-          <p><strong>개발 경험이 많지 않아도 괜찮습니다.</strong><br />
-          “이번 학기에는 내 프로젝트 하나를 제대로 만들어보고 싶다”면 QNC에 참여해보세요.</p>
+          <p data-i18n="about.callout"><strong>Not much development experience? That's okay.</strong><br />
+          If you've been thinking, “This semester, I want to properly build a project of my own,” join QNC.</p>
         </div>
       </div>
     </section>
@@ -94,19 +97,19 @@
       <div class="container prize">
         <div class="prize-main">
           <p class="section-eyebrow">Prize</p>
-          <h2 class="section-title">🏆 총 <span class="prize-amount">100만원+</span> 상당의 Prize</h2>
-          <p class="lead">최종 QNC Award Ceremony에서는 총 1,000,000원 상당의 상품이 준비될 예정입니다.</p>
+          <h2 class="section-title" data-i18n="prize.title">🏆 <span class="prize-amount">₩1,000,000+</span> in Prizes</h2>
+          <p class="lead" data-i18n="prize.lead">Prizes worth a total of ₩1,000,000 will be awarded at the final QNC Award Ceremony.</p>
         </div>
         <div class="prize-criteria">
-          <h3>QNC는 결과물만 평가하지 않습니다</h3>
+          <h3 data-i18n="prize.h">QNC doesn't judge the final product alone</h3>
           <ul class="checklist">
-            <li>프로젝트 진행 과정</li>
-            <li>팀 내 협업</li>
-            <li>역할 수행</li>
-            <li>꾸준한 개발 과정</li>
-            <li>완성된 결과물</li>
+            <li data-i18n="prize.k1">Project progress</li>
+            <li data-i18n="prize.k2">Teamwork</li>
+            <li data-i18n="prize.k3">Fulfilling your role</li>
+            <li data-i18n="prize.k4">Consistent development</li>
+            <li data-i18n="prize.k5">The finished product</li>
           </ul>
-          <p class="muted">좋은 결과물을 만드는 것뿐만 아니라, 팀이 함께 끝까지 프로젝트를 완성해 나가는 과정 자체가 QNC의 핵심입니다.</p>
+          <p class="muted" data-i18n="prize.note">Building a great product matters, but the heart of QNC is the process of a team working together to see a project through to the end.</p>
         </div>
       </div>
     </section>
@@ -115,49 +118,49 @@
     <section id="process" class="section">
       <div class="container">
         <p class="section-eyebrow">How it works</p>
-        <h2 class="section-title">💻 QNC 진행절차</h2>
+        <h2 class="section-title" data-i18n="process.title">💻 The QNC Process</h2>
         <ol class="timeline">
           <li class="step">
             <span class="step-num">01</span>
             <div>
-              <h3>참가 신청</h3>
-              <p>QNC 프로그램에 참가 신청합니다.</p>
+              <h3 data-i18n="s1.t">Apply</h3>
+              <p data-i18n="s1.p">Sign up for the QNC program.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">02</span>
             <div>
               <h3>Team Matching</h3>
-              <p>함께 프로젝트를 진행할 팀원을 찾고 팀을 구성합니다.</p>
+              <p data-i18n="s2.p">Find teammates and form a team for your project.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">03</span>
             <div>
               <h3>Idea Development</h3>
-              <p>팀원들과 프로젝트 아이디어를 구체화하고 개발 계획을 세웁니다.</p>
-              <p class="step-note">임원진이 주기적으로 진행상황을 체크하며, 각 팀은 주어진 템플릿을 완성해야 합니다. → <a href="#templates">템플릿 받기</a></p>
+              <p data-i18n="s3.p">Flesh out your project idea with your team and plan its development.</p>
+              <p class="step-note" data-i18n="s3.note">The executive team will check in on your progress regularly, and each team must complete the provided template. → <a href="#templates">Get the templates</a></p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">04</span>
             <div>
               <h3>Mid-Break Advising Session</h3>
-              <p>중간 진행 단계에서 교수님 및 Project Manager의 피드백과 멘토링을 받습니다.</p>
+              <p data-i18n="s4.p">At the midpoint, get feedback and mentoring from professors and Project Managers.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">05</span>
             <div>
               <h3>Project Development</h3>
-              <p>피드백을 바탕으로 실제 프로젝트를 개발하고 완성합니다.</p>
+              <p data-i18n="s5.p">Build and finish your project based on that feedback.</p>
             </div>
           </li>
           <li class="step step-final">
             <span class="step-num">06</span>
             <div>
               <h3>Final Presentation &amp; QNC Award Ceremony</h3>
-              <p>학기 말 프로젝트를 발표하고, 교수님들의 평가를 통해 우수 프로젝트를 선정합니다.</p>
+              <p data-i18n="s6.p">Present your project at the end of the semester. Professors evaluate the projects and select the best ones.</p>
             </div>
           </li>
         </ol>
@@ -168,17 +171,17 @@
     <section id="templates" class="section section-alt">
       <div class="container">
         <p class="section-eyebrow">Templates</p>
-        <h2 class="section-title">📂 QNC 템플릿</h2>
+        <h2 class="section-title" data-i18n="templates.title">📂 QNC Templates</h2>
         <div class="resources">
           <article class="resource">
             <div class="resource-head">
               <div class="resource-icon" aria-hidden="true">💡</div>
               <div>
                 <h3>Idea Building Template</h3>
-                <p class="resource-meta">Word (.docx) · 영문</p>
+                <p class="resource-meta" data-i18n="templates.meta">Word (.docx) · English</p>
               </div>
             </div>
-            <p>팀 아이디어를 구체화하고 기록하는 문서입니다. 팀당 하나의 공유 문서로 학기 내내 사용하며, 방향이 바뀌면 무엇이 왜 바뀌었는지 함께 기록합니다.</p>
+            <p data-i18n="t1.p">A document for developing and recording your team's idea. Use one shared copy per team throughout the semester, and if your direction changes, record what changed and why.</p>
             <ul class="tags">
               <li>Team Profile</li>
               <li>Idea Overview</li>
@@ -187,7 +190,7 @@
               <li>Funding / Support Request</li>
               <li>Brainstorming Notes</li>
             </ul>
-            <a class="btn" href="assets/templates/qnc-idea-building-template.docx" download="QNC Program_Idea Building Template.docx">⬇ 다운로드</a>
+            <a class="btn" href="assets/templates/qnc-idea-building-template.docx" download="QNC Program_Idea Building Template.docx" data-i18n="templates.dl">⬇ Download</a>
           </article>
 
           <article class="resource">
@@ -195,29 +198,29 @@
               <div class="resource-icon" aria-hidden="true">🗓</div>
               <div>
                 <h3>Weekly Check-in Sheet</h3>
-                <p class="resource-meta">Word (.docx) · 영문</p>
+                <p class="resource-meta" data-i18n="templates.meta">Word (.docx) · English</p>
               </div>
             </div>
-            <p>각 팀이 매주 PM / Advisor에게 제출하는 진행 보고서입니다. 새 주차 기록은 맨 위에 추가하고, 이전 기록은 지우지 않고 남겨둡니다.</p>
+            <p data-i18n="t2.p">The progress report each team submits weekly to their PM / Advisor. Add each new week at the top, and keep earlier entries instead of deleting them.</p>
             <ul class="tags">
               <li>Team Profile</li>
               <li>Milestones &amp; Roadmap</li>
               <li>Open Action Items</li>
               <li>Weekly Check-in Log</li>
             </ul>
-            <a class="btn" href="assets/templates/qnc-weekly-check-in-sheet.docx" download="QNC_Weekly Check-in Sheet.docx">⬇ 다운로드</a>
+            <a class="btn" href="assets/templates/qnc-weekly-check-in-sheet.docx" download="QNC_Weekly Check-in Sheet.docx" data-i18n="templates.dl">⬇ Download</a>
           </article>
         </div>
 
         <div class="callout resource-tips">
-          <h3>작성 가이드</h3>
+          <h3 data-i18n="guide.h">How to fill them out</h3>
           <ul>
-            <li>팀당 하나의 공유 문서를 사용하세요.</li>
-            <li>답변은 질문당 1–3문장으로 간결하게 작성하세요.</li>
-            <li>주장은 관찰, 출처, 테스트 결과, 결과물로 뒷받침하고, 검증되지 않은 내용은 “Assumption”으로 표시하세요.</li>
-            <li>모르는 내용은 “To verify”와 함께 담당자와 기한을 적어주세요.</li>
-            <li>모든 Action item에는 담당자 1명, 마감일, 명확한 완료 조건이 있어야 합니다.</li>
-            <li>막히는 부분이 있다면 주간 체크인을 기다리지 말고 바로 알려주세요.</li>
+            <li data-i18n="guide.1">Use one shared document per team.</li>
+            <li data-i18n="guide.2">Keep answers brief: 1–3 sentences per question.</li>
+            <li data-i18n="guide.3">Back up claims with an observation, source, test result, or artifact, and label untested claims as “Assumption.”</li>
+            <li data-i18n="guide.4">If you don't know an answer, write “To verify” with an owner and a deadline.</li>
+            <li data-i18n="guide.5">Every action item needs one owner, a due date, and a clear completion condition.</li>
+            <li data-i18n="guide.6">If you're blocked, tell us right away instead of waiting for the weekly check-in.</li>
           </ul>
         </div>
       </div>
@@ -227,12 +230,11 @@
     <section id="support" class="section">
       <div class="container support">
         <p class="section-eyebrow">With SKCS</p>
-        <h2 class="section-title">🛠 SKCS가 함께합니다</h2>
-        <p class="lead">
-          QNC 기간 동안 SKCS는 각 팀의 프로젝트 진행 상황을 지속적으로 확인하고,
-          모든 팀이 프로젝트를 끝까지 완성할 수 있도록 필요한 지원을 제공할 예정입니다.
+        <h2 class="section-title" data-i18n="support.title">🛠 SKCS Has Your Back</h2>
+        <p class="lead" data-i18n="support.lead">
+          Throughout QNC, SKCS will keep track of each team's progress and provide the support every team needs to finish their project.
         </p>
-        <p class="muted">막히는 부분이 있거나 도움이 필요하다면 언제든 SKCS Executive Team에 이야기해주세요.</p>
+        <p class="muted" data-i18n="support.muted">If you get stuck or need help, reach out to the SKCS Executive Team anytime.</p>
         <p class="tagline">Connect. Collaborate. Create.</p>
       </div>
     </section>
@@ -243,15 +245,15 @@
         <h2 class="cta-title">🦆 Build Your Project.<br />Build Your Portfolio.</h2>
         <dl class="info-list">
           <div>
-            <dt>📌 신청</dt>
+            <dt data-i18n="contact.apply">📌 Apply</dt>
             <dd><a href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener">forms.gle/39ouD3MGVuKXuVDWA</a></dd>
           </div>
           <div>
-            <dt>📌 신청 마감</dt>
-            <dd>10/12</dd>
+            <dt data-i18n="contact.deadline">📌 Deadline</dt>
+            <dd data-i18n="contact.date">Oct 12</dd>
           </div>
           <div>
-            <dt>📌 문의</dt>
+            <dt data-i18n="contact.contact">📌 Contact</dt>
             <dd>
               <a href="https://instagram.com/skcs.official" target="_blank" rel="noopener">@skcs.official</a>
               <span class="sep">/</span>
@@ -259,7 +261,7 @@
             </dd>
           </div>
         </dl>
-        <a class="btn btn-lg btn-dark" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener">QNC 참가 신청하기 →</a>
+        <a class="btn btn-lg btn-dark" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener" data-i18n="contact.btn">Apply to QNC →</a>
       </div>
     </section>
   </main>

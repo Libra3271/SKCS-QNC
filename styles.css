@@ -76,6 +76,14 @@ p { margin: 0; }
 .nav-links { display: flex; gap: 22px; margin-left: auto; }
 .nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 15px; }
 .nav-links a:hover { color: var(--ink); }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.lang-toggle {
+  font: inherit; font-size: 14px; font-weight: 500; cursor: pointer;
+  padding: 7px 14px; border-radius: 999px;
+  background: transparent; color: var(--ink); border: 1.5px solid var(--border);
+  transition: border-color .15s ease, background .15s ease;
+}
+.lang-toggle:hover { border-color: var(--ink); }
 
 /* Hero */
 .hero {
@@ -249,4 +257,9 @@ p { margin: 0; }
   .timeline::before { left: 25px; }
   .info-list dt { min-width: auto; }
   .resource { padding: 22px; }
+  .brand { font-size: 16px; white-space: nowrap; }
+  .brand-mark { font-size: 20px; }
+  .nav-actions { gap: 6px; }
+  .lang-toggle { padding: 6px 10px; font-size: 13px; }
+  .nav .btn-sm { padding: 7px 12px; font-size: 13px; }
 }
