@@ -53,7 +53,6 @@ const KO = {
   "support.title": "🛠 SKCS가 함께합니다",
   "support.lead": "QNC 기간 동안 SKCS는 각 팀의 프로젝트 진행 상황을 지속적으로 확인하고, 모든 팀이 프로젝트를 끝까지 완성할 수 있도록 필요한 지원을 제공할 예정입니다.",
   "support.muted": "막히는 부분이 있거나 도움이 필요하다면 언제든 SKCS Executive Team에 이야기해주세요.",
-  "contact.apply": "📌 신청",
   "contact.deadline": "📌 신청 마감",
   "contact.date": "10/12",
   "contact.contact": "📌 문의",
