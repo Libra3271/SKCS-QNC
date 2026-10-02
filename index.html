@@ -7,7 +7,7 @@
   <meta name="description" content="Quack N Click (QNC), the SKCS side project support program. Build a team, develop your idea, and ship a working project." />
   <meta property="og:title" content="SKCS Quack N Click (QNC): Now Recruiting" />
   <meta property="og:description" content="Have an idea? Quack. Click. Create. ₩1,000,000+ in prizes · Apply by Oct 12" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23ffd23f'/><text x='50' y='72' font-family='Arial,sans-serif' font-size='64' font-weight='700' text-anchor='middle' fill='%231b1b1f'>Q</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -16,10 +16,7 @@
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Quack N Click home">
-        <span class="brand-mark" aria-hidden="true">🦆</span>
-        <span class="brand-text">Quack N Click</span>
-      </a>
+      <a href="#top" class="brand" aria-label="Quack N Click home">Quack N Click</a>
       <nav class="nav-links" aria-label="Main menu">
         <a href="#about">About</a>
         <a href="#prize">Prize</a>
@@ -29,7 +26,10 @@
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button type="button" class="lang-toggle" id="lang-toggle" lang="ko" aria-label="한국어로 보기">한국어</button>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true" aria-label="Language: EN">EN</button>
+          <button type="button" data-lang="ko" aria-pressed="false" aria-label="Language: KO" lang="ko">한</button>
+        </div>
         <a class="btn btn-sm" href="https://forms.gle/39ouD3MGVuKXuVDWA" target="_blank" rel="noopener" data-i18n="nav.apply">Apply</a>
       </div>
     </div>
@@ -60,7 +60,6 @@
         </div>
         <p class="hero-note" data-i18n="hero.note">* Your project start date is based on when you submit the form, so <strong>the earlier you apply, the better.</strong></p>
       </div>
-      <div class="hero-duck" aria-hidden="true">🦆</div>
     </section>
 
     <!-- About -->
@@ -242,7 +241,7 @@
     <!-- CTA / Contact -->
     <section id="contact" class="section cta">
       <div class="container cta-inner">
-        <h2 class="cta-title">🦆 Build Your Project.<br />Build Your Portfolio.</h2>
+        <h2 class="cta-title">Build Your Project.<br />Build Your Portfolio.</h2>
         <dl class="info-list">
           <div>
             <dt data-i18n="contact.apply">📌 Apply</dt>

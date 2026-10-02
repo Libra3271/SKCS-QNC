@@ -61,6 +61,7 @@ const KO = {
 };
 
 const i18nEls = document.querySelectorAll("[data-i18n]");
+const langButtons = document.querySelectorAll(".lang-switch button");
 i18nEls.forEach((el) => (el.dataset.en = el.innerHTML));
 let lang = "en";
 
@@ -80,17 +81,14 @@ function setLang(next) {
     el.innerHTML = lang === "ko" ? KO[el.dataset.i18n] ?? el.dataset.en : el.dataset.en;
   });
   document.documentElement.lang = lang;
-  const toggle = document.getElementById("lang-toggle");
-  toggle.textContent = lang === "ko" ? "English" : "한국어";
-  toggle.lang = lang === "ko" ? "en" : "ko";
-  toggle.setAttribute("aria-label", lang === "ko" ? "View in English" : "한국어로 보기");
+  langButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
   try {
     localStorage.setItem("qnc-lang", lang);
   } catch {}
   updateCountdown();
 }
 
-document.getElementById("lang-toggle").addEventListener("click", () => setLang(lang === "ko" ? "en" : "ko"));
+langButtons.forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
 
 // ---------- 마감 카운트다운 ----------
 function updateCountdown() {
